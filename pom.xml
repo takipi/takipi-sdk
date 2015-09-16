@@ -22,5 +22,12 @@
 		<url>https://github.com/takipi/takipi-sdk</url>
 		<tag>HEAD</tag>
 	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>bintray</id>
+			<url>https://api.bintray.com/maven/takipi/maven/takipi-sdk</url>
+		</repository>
+	</distributionManagement>
 	
 </project>
