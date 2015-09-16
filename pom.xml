@@ -16,5 +16,19 @@
 		<module>takipi-sdk</module>
 		<module>takipi-sdk-agent-shared</module>
 	</modules>
+
+	<scm>
+		<connection>scm:git:https://github.com/takipi/takipi-sdk.git</connection>
+		<developerConnection>scm:git:git@github.com:takipi/takipi-sdk.git</developerConnection>
+		<url>https://github.com/takipi/takipi-sdk</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>bintray</id>
+			<url>https://api.bintray.com/maven/takipi/maven/takipi-sdk</url>
+		</repository>
+	</distributionManagement>
 	
 </project>
