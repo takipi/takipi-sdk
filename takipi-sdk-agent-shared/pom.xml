@@ -83,4 +83,11 @@
 		</profile>
 	</profiles>
 
+	<distributionManagement>
+		<repository>
+			<id>bintray</id>
+			<url>https://api.bintray.com/maven/takipi/maven/takipi-sdk</url>
+		</repository>
+	</distributionManagement>
+
 </project>
