@@ -12,6 +12,10 @@ import com.takipi.sdk.v1.internal.impl.nop.TakipiNopClientImpl;
 public class TakipiClientFactory {
 	
 	public static TakipiClient create(String frameworkId, TakipiOptions options) {
+		return internalDecorate(internalCreate(frameworkId, options), options);
+	}
+	
+	private static TakipiClient internalCreate(String frameworkId, TakipiOptions options) {
 		String clientId = generateClientId();
 		
 		TakipiAgentDetector agentDetector = TakipiAgentDetector.create();
@@ -22,9 +26,10 @@ public class TakipiClientFactory {
 		
 		int agentMaxSupportedProtocolVersion = agentDetector.getMaxSupportedProtocolVersion();
 		
-		TakipiClient client = TakipiAgentClientFactory.create(
-				frameworkId, clientId, options, agentMaxSupportedProtocolVersion);
-		
+		return TakipiAgentClientFactory.create(frameworkId, clientId, options, agentMaxSupportedProtocolVersion);
+	}
+	
+	private static TakipiClient internalDecorate(TakipiClient client, TakipiOptions options) {
 		if (options.isDebugEnabled()) {
 			return TakipiDebugClient.wrap(client);
 		} else {
