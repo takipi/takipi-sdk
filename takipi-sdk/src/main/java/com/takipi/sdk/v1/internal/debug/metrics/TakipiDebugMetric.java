@@ -32,15 +32,20 @@ public abstract class TakipiDebugMetric implements TakipiMetric {
 		
 		long now = System.currentTimeMillis();
 		if (now - lastPrintTime > printPeriodMillis) {
-			logger.log("Clearing " + metric.toString() + " for " + context);
+			logger.log("Clearing " + metric + " for " + context);
 			lastPrintTime = now;
 		}
+	}
+	
+	@Override
+	public String toString() {
+		return metric.toString();
 	}
 	
 	protected void logUpdate(TakipiContext context, Object value) {
 		long now = System.currentTimeMillis();
 		if (now - lastPrintTime > printPeriodMillis) {
-			logger.log("Updating " + metric.toString() + " for " + context + " with " + value);
+			logger.log("Updating " + metric + " for " + context + " with " + value);
 			lastPrintTime = now;
 		}
 	}
