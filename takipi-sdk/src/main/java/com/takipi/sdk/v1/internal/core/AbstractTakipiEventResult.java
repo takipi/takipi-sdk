@@ -7,6 +7,9 @@ public abstract class AbstractTakipiEventResult implements TakipiEventResult {
 	protected AbstractTakipiEventResult() {}
 	
 	@Override
+	public abstract boolean hasSnapshot();
+	
+	@Override
 	public abstract String getSnapshotId();
 	
 	@Override

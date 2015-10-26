@@ -14,4 +14,7 @@ public abstract class AbstractTakipiEvent extends AbstractTakipiNamedEntity impl
 	public TakipiEventResult fire() {
 		return fire(TakipiEventFireOptions.DEFAULT);
 	}
+	
+	@Override
+	public abstract TakipiEventResult fire(TakipiEventFireOptions options);
 }
