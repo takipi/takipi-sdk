@@ -11,4 +11,7 @@ public class TakipiNopContext extends AbstractTakipiContext {
 	private TakipiNopContext(Class<?> clazz, String path) {
 		super(clazz, path);
 	}
+	
+	@Override
+	public void dispose() {}
 }

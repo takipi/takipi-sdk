@@ -13,6 +13,7 @@ import com.takipi.sdk.v1.api.core.metrics.TakipiMetricOptions;
 import com.takipi.sdk.v1.api.core.metrics.TakipiMinMetric;
 import com.takipi.sdk.v1.api.core.metrics.TakipiSumMetric;
 import com.takipi.sdk.v1.internal.TakipiClient;
+import com.takipi.sdk.v1.internal.debug.contexts.TakipiDebugContext;
 import com.takipi.sdk.v1.internal.debug.events.TakipiDebugEvent;
 import com.takipi.sdk.v1.internal.debug.metrics.TakipiDebugAbsoluteGaugeMetric;
 import com.takipi.sdk.v1.internal.debug.metrics.TakipiDebugAdjustableGaugeMetric;
@@ -56,7 +57,7 @@ public class TakipiDebugClient implements TakipiClient {
 	public TakipiContext createContext(Class<?> clazz, String path) {
 		logger.log("Creating context: " + clazz.getName() + " [" + path + "]");
 		try {
-			return client.createContext(clazz, path);
+			return TakipiDebugContext.wrap(client.createContext(clazz, path), logger);
 		} finally {
 			logger.log("Context created: " + clazz.getName() + " [" + path + "]");
 		}
