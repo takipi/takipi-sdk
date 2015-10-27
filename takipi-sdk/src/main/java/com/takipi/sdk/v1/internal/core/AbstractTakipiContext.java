@@ -13,6 +13,9 @@ public abstract class AbstractTakipiContext implements TakipiContext {
 	}
 	
 	@Override
+	public abstract void dispose();
+	
+	@Override
 	public final int hashCode() {
 		return clazz.hashCode();
 	}

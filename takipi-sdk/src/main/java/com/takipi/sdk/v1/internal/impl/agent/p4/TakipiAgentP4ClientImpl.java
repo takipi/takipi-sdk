@@ -32,7 +32,7 @@ public class TakipiAgentP4ClientImpl extends TakipiAgentP3ClientImpl {
 	
 	private final TakipiInternalP4AgentBridge bridge;
 	
-	private TakipiAgentP4ClientImpl(String frameworkId, String clientId, TakipiOptions options,
+	protected TakipiAgentP4ClientImpl(String frameworkId, String clientId, TakipiOptions options,
 			TakipiInternalP4AgentBridge bridge) {
 		super(frameworkId, clientId, options, bridge);
 		this.bridge = bridge;

@@ -128,6 +128,23 @@ public class Takipi {
 		}
 		
 		/**
+		 * Returns an instance of {@link TakipiContext} representing an entity denoted by the given path.<br><br>
+		 * 
+		 * Takipi contexts represent application entry-points and other distinct application-space entities,
+		 * and are used for differentiation when collecting metrics. Metrics are collected on a per-context
+		 * basis, and are aggregated separately by context.
+		 * 
+		 * @param path A path identifying the application entity this context represents.
+		 * 			   Must not be {@code null} or empty
+		 * @return An instance of {@link TakipiContext} representing the given path
+		 */
+		public TakipiContext createContext(String path) {
+			Assert.notNullOrEmpty(path, "Context path must not be null or empty");
+			
+			return client.createContext(Object.class, path);
+		}
+		
+		/**
 		 * Returns an instance of {@link TakipiContext} representing an entity denoted by the given path,
 		 * under the given class.<br><br>
 		 * 

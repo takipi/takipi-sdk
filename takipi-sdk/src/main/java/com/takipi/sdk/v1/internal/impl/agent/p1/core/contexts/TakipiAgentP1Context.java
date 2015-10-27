@@ -12,9 +12,14 @@ public class TakipiAgentP1Context extends AbstractTakipiContext {
 	
 	private final TakipiInternalP1Context internalContext;
 	
-	private TakipiAgentP1Context(Class<?> clazz, String path, TakipiInternalP1Context internalContext) {
+	protected TakipiAgentP1Context(Class<?> clazz, String path, TakipiInternalP1Context internalContext) {
 		super(clazz, path);
 		this.internalContext = internalContext;
+	}
+	
+	@Override
+	public void dispose() {
+		
 	}
 	
 	public TakipiInternalP1Context getInternalContext() {
