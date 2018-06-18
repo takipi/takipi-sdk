@@ -29,16 +29,12 @@ Additional information can be found here https://bintray.com/takipi/maven/takipi
 The SDK can be used to create custom events inside your application.  See the sample Java code below:
 
 ```java
-
-
 import com.takipi.sdk.v1.api.Takipi;
 import com.takipi.sdk.v1.api.core.events.TakipiEvent;
 
 public class CustomEventService {
 
-
     private static final Takipi takipi = Takipi.create("CUSTOM_EVENT_SERVICE");
-
 
     public void doSomethingImportant() {
 
@@ -48,7 +44,6 @@ public class CustomEventService {
 
     }
 }
-
 ```
 
 ## Building
