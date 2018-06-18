@@ -32,9 +32,9 @@ The SDK can be used to create custom events inside your application.  See the sa
 import com.takipi.sdk.v1.api.Takipi;
 import com.takipi.sdk.v1.api.core.events.TakipiEvent;
 
-public class CustomEventService {
+public class CustomEventExample {
 
-    private static final Takipi takipi = Takipi.create("CUSTOM_EVENT_SERVICE");
+    private static final Takipi takipi = Takipi.create("CUSTOM_EVENT_EXAMPLE");
 
     public void doSomethingImportant() {
 
