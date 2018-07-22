@@ -6,6 +6,6 @@ import com.takipi.sdk.v1.internal.agent.shared.p5.core.contexts.TakipiInternalP5
 public interface TakipiInternalP6AgentBridge extends TakipiInternalP5AgentBridge {
 	
 	public TakipiInternalP5Context createInternalContext(Class<?> clazz, String methodName, String methodDesc);
-	public TakipiInternalP5Context createInternalContext(String ClassName, String methodName, String methodDesc);
+	public TakipiInternalP5Context createInternalContext(String className, String methodName, String methodDesc);
 }
 
