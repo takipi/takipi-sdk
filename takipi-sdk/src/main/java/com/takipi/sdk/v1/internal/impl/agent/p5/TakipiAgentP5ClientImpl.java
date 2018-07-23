@@ -17,7 +17,7 @@ public class TakipiAgentP5ClientImpl extends TakipiAgentP4ClientImpl {
 	
 	private final TakipiInternalP5AgentBridge bridge;
 	
-	protected TakipiAgentP5ClientImpl(String frameworkId, String clientId, TakipiOptions options,
+	private TakipiAgentP5ClientImpl(String frameworkId, String clientId, TakipiOptions options,
 			TakipiInternalP5AgentBridge bridge) {
 		super(frameworkId, clientId, options, bridge);
 		this.bridge = bridge;
