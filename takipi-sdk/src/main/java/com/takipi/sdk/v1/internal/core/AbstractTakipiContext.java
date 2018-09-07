@@ -35,6 +35,6 @@ public abstract class AbstractTakipiContext implements TakipiContext {
 	
 	@Override
 	public String toString() {
-		return clazz.getName() + " [" + path + "]";
+		return clazz.getName() + " [" + path + ']';
 	}
 }

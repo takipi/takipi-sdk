@@ -32,6 +32,6 @@ public abstract class AbstractTakipiClientImpl implements TakipiClient {
 	
 	@Override
 	public String toString() {
-		return getClass().getSimpleName() + " " + frameworkId + " " + clientId;
+		return getClass().getSimpleName() + ' ' + frameworkId + ' ' + clientId;
 	}
 }

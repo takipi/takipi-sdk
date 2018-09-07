@@ -51,7 +51,7 @@ public class TakipiOptions {
 	
 	@Override
 	public String toString() {
-		return 	"Debug enabled: " + isDebugEnabled + "\n" +
+		return 	"Debug enabled: " + isDebugEnabled + '\n' +
 				"Debug metrics print period: " + debugMetricsPrintPeriodMillis + " millis";
 	}
 	

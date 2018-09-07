@@ -13,7 +13,7 @@ public class TakipiAgentInterface {
 	private static final String PACKAGE_NAME		= "com.sparktale.bugtale.agent.sdk.v1";
 	private static final String SIMPLE_CLASS_NAME	= "TakipiSdkInterface";
 	
-	private static final String FULL_CLASS_NAME		= PACKAGE_NAME + "." + SIMPLE_CLASS_NAME;
+	private static final String FULL_CLASS_NAME		= PACKAGE_NAME + '.' + SIMPLE_CLASS_NAME;
 	
 	private static final String GET_MAX_SUPPORTED_PROTOCOL_VERSION_METHOD_NAME	= "getMaxSupportedProtocolVersion";
 	private static final String CREATE_BRIDGE_METHOD_NAME_PATTERN				= "createP%dBridge";

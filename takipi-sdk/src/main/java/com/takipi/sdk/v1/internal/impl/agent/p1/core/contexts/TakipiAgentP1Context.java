@@ -28,6 +28,6 @@ public class TakipiAgentP1Context extends AbstractTakipiContext {
 	
 	@Override
 	public String toString() {
-		return super.toString() + " (" + internalContext.toString() + ")";
+		return super.toString() + " (" + internalContext.toString() + ')';
 	}
 }

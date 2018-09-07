@@ -128,10 +128,10 @@ public class TakipiMetricOptions {
 	
 	@Override
 	public String toString() {
-		return 	"Display name: " + displayName + "\n" +
-				"Unit: " + unit + "\n" +
-				"Unit suffix: " + unitSuffix + "\n" +
-				"Unit plural suffix: " + unitPluralSuffix + "\n" +
+		return 	"Display name: " + displayName + '\n' +
+				"Unit: " + unit + '\n' +
+				"Unit suffix: " + unitSuffix + '\n' +
+				"Unit plural suffix: " + unitPluralSuffix + '\n' +
 				"Brackets: " + brackets;
 	}
 	

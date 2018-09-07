@@ -55,11 +55,11 @@ public class TakipiDebugClient implements TakipiClient {
 	
 	@Override
 	public TakipiContext createContext(Class<?> clazz, String path) {
-		logger.log("Creating context: " + clazz.getName() + " [" + path + "]");
+		logger.log("Creating context: " + clazz.getName() + " [" + path + ']');
 		try {
 			return TakipiDebugContext.wrap(client.createContext(clazz, path), logger);
 		} finally {
-			logger.log("Context created: " + clazz.getName() + " [" + path + "]");
+			logger.log("Context created: " + clazz.getName() + " [" + path + ']');
 		}
 	}
 	

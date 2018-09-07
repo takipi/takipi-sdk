@@ -28,6 +28,6 @@ public class TakipiAgentP1EventResult extends AbstractTakipiEventResult {
 	
 	@Override
 	public String toString() {
-		return super.toString() + " (" + internalResult + ")";
+		return super.toString() + " (" + internalResult + ')';
 	}
 }

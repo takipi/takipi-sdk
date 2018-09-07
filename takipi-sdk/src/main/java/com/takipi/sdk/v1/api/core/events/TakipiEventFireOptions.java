@@ -76,7 +76,7 @@ public class TakipiEventFireOptions {
 	@Override
 	public String toString() {
 		return 	"Message: \"" + message + "\"\n" +
-				"Force snapshot: " + forceSnapshot + "\n" +
+				"Force snapshot: " + forceSnapshot + '\n' +
 				"Extra context: " + extraContext;
 	}
 	
