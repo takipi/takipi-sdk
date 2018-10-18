@@ -27,6 +27,16 @@ public class TakipiAgentP1EventResult extends AbstractTakipiEventResult {
 	}
 	
 	@Override
+	public boolean hasSnapshotUrl() {
+		return false;
+	}
+	
+	@Override
+	public String getSnapshotUrl() {
+		return null;
+	}
+	
+	@Override
 	public String toString() {
 		return super.toString() + " (" + internalResult + ")";
 	}

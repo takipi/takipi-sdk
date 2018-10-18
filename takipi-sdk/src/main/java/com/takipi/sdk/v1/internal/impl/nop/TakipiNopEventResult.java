@@ -19,4 +19,14 @@ public class TakipiNopEventResult extends AbstractTakipiEventResult {
 	public String getSnapshotId() {
 		return null;
 	}
+	
+	@Override
+	public boolean hasSnapshotUrl() {
+		return false;
+	}
+	
+	@Override
+	public String getSnapshotUrl() {
+		return null;
+	}
 }

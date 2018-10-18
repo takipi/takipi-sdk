@@ -13,6 +13,12 @@ public abstract class AbstractTakipiEventResult implements TakipiEventResult {
 	public abstract String getSnapshotId();
 	
 	@Override
+	public abstract boolean hasSnapshotUrl();
+	
+	@Override
+	public abstract String getSnapshotUrl();
+	
+	@Override
 	public String toString() {
 		return "Snapshot ID: " + getSnapshotId();
 	}
