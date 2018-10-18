@@ -7,50 +7,18 @@
     <parent>
         <groupId>com.takipi</groupId>
         <artifactId>takipi-sdk-parent</artifactId>
-        <version>0.2.1</version>
+        <version>0.3.0</version>
     </parent>
 
     <artifactId>takipi-sdk-agent-shared</artifactId>
     <packaging>jar</packaging>
 
-    <name>Takipi SDK internal agent shared interfaces</name>
-    <url>http://www.takipi.com</url>
+    <name>takipi-sdk-agent-shared</name>
+    <description>OverOps (Takipi) SDK internal agent shared interfaces</description>
+    <url>http://www.overops.com</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
-    <distributionManagement>
-        <repository>
-            <id>bintray</id>
-            <url>https://api.bintray.com/maven/takipi/maven/takipi-sdk</url>
-        </repository>
-    </distributionManagement>
-
 </project>
