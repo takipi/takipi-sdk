@@ -7,6 +7,7 @@ import com.takipi.sdk.v1.internal.agent.shared.p3.bridge.TakipiInternalP3AgentBr
 import com.takipi.sdk.v1.internal.agent.shared.p4.bridge.TakipiInternalP4AgentBridge;
 import com.takipi.sdk.v1.internal.agent.shared.p5.bridge.TakipiInternalP5AgentBridge;
 import com.takipi.sdk.v1.internal.agent.shared.p6.bridge.TakipiInternalP6AgentBridge;
+import com.takipi.sdk.v1.internal.agent.shared.p7.bridge.TakipiInternalP7AgentBridge;
 
 public class TakipiAgentInterface {
 	
@@ -68,6 +69,10 @@ public class TakipiAgentInterface {
 	
 	public TakipiInternalP6AgentBridge createP6Bridge(String frameworkId, String clientId) {
 		return createBridge(frameworkId, clientId, 6);
+	}
+
+	public TakipiInternalP7AgentBridge createP7Bridge(String frameworkId, String clientId) {
+		return createBridge(frameworkId, clientId, 7);
 	}
 	
 	@SuppressWarnings("unchecked")

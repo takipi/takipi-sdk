@@ -9,10 +9,11 @@ import com.takipi.sdk.v1.internal.impl.agent.p3.TakipiAgentP3ClientImpl;
 import com.takipi.sdk.v1.internal.impl.agent.p4.TakipiAgentP4ClientImpl;
 import com.takipi.sdk.v1.internal.impl.agent.p5.TakipiAgentP5ClientImpl;
 import com.takipi.sdk.v1.internal.impl.agent.p6.TakipiAgentP6ClientImpl;
+import com.takipi.sdk.v1.internal.impl.agent.p7.TakipiAgentP7ClientImpl;
 
 public class TakipiAgentClientFactory {
 	
-	private static final int MAX_SUPPORTED_PROTOCOL_VERSION	= 6;
+	private static final int MAX_SUPPORTED_PROTOCOL_VERSION	= 7;
 	
 	public static TakipiClient create(String frameworkId, String clientId, TakipiOptions options,
 			int agentMaxSupportedProtocolVersion) {
@@ -28,6 +29,7 @@ public class TakipiAgentClientFactory {
 			case 4:		return TakipiAgentP4ClientImpl.create(frameworkId, clientId, options);
 			case 5:		return TakipiAgentP5ClientImpl.create(frameworkId, clientId, options);
 			case 6:		return TakipiAgentP6ClientImpl.create(frameworkId, clientId, options);
+			case 7:		return TakipiAgentP7ClientImpl.create(frameworkId, clientId, options);
 			
 			default:	throw new TakipiRuntimeException("Unsupported protocol version: " + protocolVersion);
 		}

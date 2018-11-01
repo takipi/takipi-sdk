@@ -13,7 +13,7 @@ public class TakipiAgentP6ClientImpl extends TakipiAgentP5ClientImpl {
 				TakipiAgentInterface.create().createP6Bridge(frameworkId, clientId));
 	}
 	
-	private TakipiAgentP6ClientImpl(String frameworkId, String clientId, TakipiOptions options,
+	protected TakipiAgentP6ClientImpl(String frameworkId, String clientId, TakipiOptions options,
 			TakipiInternalP6AgentBridge bridge) {
 		super(frameworkId, clientId, options, bridge);
 	}

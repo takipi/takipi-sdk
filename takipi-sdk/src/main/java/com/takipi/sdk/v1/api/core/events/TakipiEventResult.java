@@ -25,4 +25,19 @@ public interface TakipiEventResult {
 	 * @return The data snapshot's unique ID, or {@code null} if none.
 	 */
 	public String getSnapshotId();
+
+	/**
+	 * Returns whether or not this instance of the event generated a snapshot url.
+	 * 
+	 * @return {@code true} if this event instance generated a snapshot url; {@code false} otherwise.
+	 */
+	public boolean hasSnapshotUrl();
+	
+	/**
+	 * Returns the event instance's snapshot's unique url, or {@code null} if no snapshot was
+	 * generated during the firing of this event instance.
+	 * 
+	 * @return The data snapshot's unique url, or {@code null} if none.
+	 */
+	public String getSnapshotUrl();
 }
