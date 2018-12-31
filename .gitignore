@@ -16,6 +16,7 @@
 # Gradle
 .gradle
 .gradletasknamecache
+build.gradle
 
 # General temp/artifact files
 bin/
