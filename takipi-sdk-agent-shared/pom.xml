@@ -3,15 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
-        <groupId>com.takipi</groupId>
+        <groupId>com.overops</groupId>
         <artifactId>takipi-sdk-parent</artifactId>
-        <version>0.3.0</version>
+        <version>5.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>takipi-sdk-agent-shared</artifactId>
-    <packaging>jar</packaging>
 
     <name>takipi-sdk-agent-shared</name>
     <description>OverOps (Takipi) SDK internal agent shared interfaces</description>

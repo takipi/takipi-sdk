@@ -3,10 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.takipi</groupId>
+    <parent>
+        <groupId>com.overops</groupId>
+        <artifactId>parent-pom</artifactId>
+        <version>5.0.0-SNAPSHOT</version>
+    </parent>
+    
     <artifactId>takipi-sdk-parent</artifactId>
-    <version>0.3.0</version>
     <packaging>pom</packaging>
 
     <name>takipi-sdk-parent</name>
@@ -14,8 +17,8 @@
     <url>http://www.overops.com</url>
 
     <modules>
-        <module>takipi-sdk</module>
         <module>takipi-sdk-agent-shared</module>
+        <module>takipi-sdk</module>
     </modules>
 
     <build>
@@ -105,14 +108,11 @@
     </build>
 
     <distributionManagement>
-        <repository>
-          <id>ossrh</id>
-          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-        <snapshotRepository>
-          <id>ossrh</id>
-          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
+      <snapshotRepository>
+        <id>snapshots</id>
+        <name>repo.overopsorl.local-snapshots</name>
+        <url>http://repo.overopsorl.local:8081/artifactory/libs-snapshot-local</url>
+      </snapshotRepository>
     </distributionManagement>
 
     <scm>
@@ -130,11 +130,4 @@
       </license>
     </licenses>
     
-    <developers>
-      <developer>
-        <id>chook</id>
-        <name>Chen Harel</name>
-        <email>chen.harel@takipi.com</email>
-      </developer>
-    </developers>
 </project>

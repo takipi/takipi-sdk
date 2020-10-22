@@ -3,16 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
-        <groupId>com.takipi</groupId>
+        <groupId>com.overops</groupId>
         <artifactId>takipi-sdk-parent</artifactId>
-        <version>0.3.0</version>
+        <version>5.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>takipi-sdk</artifactId>
-    <packaging>jar</packaging>
-
+    
     <name>takipi-sdk</name>
     <description>OverOps (Takipi) SDK</description>
     <url>http://www.oveorps.com</url>
@@ -24,11 +22,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.takipi</groupId>
+            <groupId>com.overops</groupId>
             <artifactId>takipi-sdk-agent-shared</artifactId>
-            <version>0.3.0</version>
-            <type>jar</type>
-            <scope>compile</scope>
+            <version>5.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
 </project>
